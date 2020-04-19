@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## set the value of the vector
+## get the value of the vector
+## set the value of the inverse-metric
+## get the value of the inverse-metric
 
-## Write a short comment describing this function
 
 # makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
 
@@ -18,8 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, setinv = setinv, getinv = getinv)
 }
 
-
-## Write a short comment describing this function
 # cacheSolve: This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
 
 cacheSolve <- function(x, ...) {
